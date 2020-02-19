@@ -1,4 +1,4 @@
-export default class Fecha {
+class Fecha {
    constructor(fecha)
    {
        this.fecha = fecha
@@ -19,3 +19,6 @@ export default class Fecha {
       return semana[dia]
    }
 }
+let prueba1 = new Fecha(new Date(2000,4,2))
+console.log(`${prueba1.getAños()}`)
+console.log(`${prueba1.getMeses()}`)
