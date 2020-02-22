@@ -1,9 +1,9 @@
-class Fecha {
+export default class Fecha {
    constructor(fecha)
    {
        this.fecha = fecha
        this.fechaActual = new Date()
-       this.años = Math.floor(((this.fechaActual - this.fecha) / (1000 * 60 * 60 * 24) / 365));
+       this.años = (this.fechaActual.getFullYear() - this.fecha.getFullYear())
    }
 
    getAños(){return this.años}
@@ -19,6 +19,12 @@ class Fecha {
       return semana[dia]
    }
 }
-let prueba1 = new Fecha(new Date(2000,4,2))
+/*
+let prueba1 = new Fecha(new Date(2020,2,21))
 console.log(`${prueba1.getAños()}`)
 console.log(`${prueba1.getMeses()}`)
+console.log(`${prueba1.getSemanas()}`)
+console.log(`${prueba1.getDias()}`)
+console.log(`${prueba1.getFecha()}`)
+console.log(`${prueba1.getDiaFecha()}`)
+*/
