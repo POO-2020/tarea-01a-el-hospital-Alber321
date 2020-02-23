@@ -1,4 +1,3 @@
-import Fecha from "./fecha.js"
 export default class Paciente{
     constructor(nombre, fechaNacimiento, telefono)
     {

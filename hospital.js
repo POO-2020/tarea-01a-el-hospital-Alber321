@@ -23,8 +23,8 @@ export default class Hospital{
     }
     listaCitas(){
         console.log("Citas Programadas: ")
-        this.doctores.forEach( (cits, i) => {
-            console.log(`(${i+1}) ${cits.getCita()}`)
+        this.citas.forEach( (cita, i) => {
+            console.log(`(${i+1}) ${cita.getCita()}`)
         })
     }
 }
